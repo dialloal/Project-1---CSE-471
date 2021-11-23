@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CSE 471 - Project 1 - Additive</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <br />
+    <h1>CSE 471 - Project 1 - Additive Synthesizer</h1>
+    <p>
+      The additive synthesizer works by adding together sinusoids to make a
+      sound
+    </p>
+    <p>Components to support:</p>
+    <ul>
+      <li>Polyphony</li>
+      <li>Glissando</li>
+      <li>Cross-fading</li>
+      <li>Envelope generation</li>
+    </ul>
+    <h2>Sample Xml Configuration</h2>
+    <pre>
+    &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+    	&lt;score bpm=&quot;180&quot; beatspermeasure=&quot;8&quot;&gt;
+
+	&lt;!--Intro/Gliss. Demo--&gt;
+   &lt;instrument instrument=&quot;AdditiveSynthesizer&quot;&gt;
+		&lt;note measure=&quot;1&quot; beat=&quot;1&quot; duration=&quot;2&quot; a1=&quot;0.5&quot; a2=&quot;.75&quot; a3=&quot;0&quot; a4=&quot;0&quot; a5=&quot;0&quot; A_D_S_R=&quot;1 0 0 1&quot;  note=&quot;G3&quot;/&gt;
+		&lt;note measure=&quot;1&quot; beat=&quot;3&quot; duration=&quot;2&quot; a1=&quot;0.5&quot; A_D_S_R=&quot;1 0 0 1&quot;  FadeOut=&quot;2&quot; vibrato=&quot;5 10&quot; note=&quot;D4&quot;/&gt;
+		&lt;note measure=&quot;1&quot; beat=&quot;6&quot; duration=&quot;2&quot; a1=&quot;0.5&quot; A_D_S_R=&quot;1 0 0 0.25&quot; FadeIn=&quot;2&quot; note=&quot;B3&quot;/&gt;
+	&lt;/instrument&gt;
+</pre
+    >
+
+    <h2>Grading Elements</h2>
+    <ul>
+      <li>
+        10 - Sinusoid playback on demand from the sequencer (Implemented
+        throughout demo)
+      </li>
+      <li>
+        20 - Definition of all harmonics (Implemented during second section of
+        demo)
+      </li>
+      <li>30 - Envelope generation (Implemented throughout demo)</li>
+      <li>35 - Polyphony (Implemented in second section of demo)</li>
+      <li>40 - Sound cross-fading (Implemented in third section of demo)</li>
+      <li>
+        50 - Vibrato OR glissando (Both implemented: Vibrato in fourth section,
+        gliss. in first section)
+      </li>
+    </ul>
+
+    <h2>Demo</h2>
+    <a href="AdditiveSynthTest.score">Demo Score File</a><br />
+    <a href="synthesizer_test.wav">Demo WAV File</a>
+
+    <h2>Super Mario</h2>
+    <a href="SuperMarioAdditiveSynth.score">Additive Super Mario Score File</a
+    ><br />
+    <a href="mario-original.wav">Additive Super Mario WAV File</a>
+  </body>
+</html>

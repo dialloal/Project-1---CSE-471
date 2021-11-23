@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CSE 471 - Project 1 - Effects</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <br />
+    <h1>CSE 471 - Project 1 - Effects</h1>
+    <h2>Sample Xml Configuration</h2>
+    <p>Effects are added on as attributes tto an instrument:</p>
+    <pre>
+    &lt;instrument instrument=&quot;Organ&quot; chorus=&quot;0.6&quot; flange=&quot;0.3&quot; compression=&quot;0.1&quot; noisegate=&quot;0.2&quot;&gt;
+  &lt;/instrument&gt;
+</pre
+    >
+    <br />
+    <h2>Effects implemented</h2>
+    <ol>
+      <li>
+        <h4>Noise Gate</h4>
+        <p>
+          Attenuates signals below a threshold value , here threshold value is
+          0.025.
+        </p>
+      </li>
+      <li>
+        <h4>Compressor</h4>
+        <p>
+          Attenuates signals above a threshold value , here threshold value is
+          0.025.
+        </p>
+      </li>
+      <li>
+        <h4>Chorus</h4>
+        <p>
+          mixes audio samples with delayed copies of itself here, delay =
+          20ms-30ms and the frequency of the LFO = 1 Hz
+        </p>
+      </li>
+      <li>
+        <h4>Flange</h4>
+        <p>
+          mixes audio samples with delayed copies of itself here, delay =
+          5ms-10ms and the frequency of the LFO = 0.5 Hz
+        </p>
+      </li>
+    </ol>
+
+    <h2>Demo</h2>
+
+    <a href="SuperMario_shortened.score">Mario Shortened Score File</a><br />
+    <a href="mario-with-noise-gate.wav">Mario with Noise Gate</a><br />
+    <a href="mario-with-compressor.wav">Mario with Compressor</a><br />
+    <a href="mario-with-chorus.wav">Mario with Chorus</a><br />
+    <a href="flange-effect.wav">Flange</a><br />
+  </body>
+</html>

@@ -1,0 +1,15 @@
+body {
+  background-color: bisque;
+  color: brown;
+}
+p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: medium;
+}
+h {
+  font-family: "Times New Roman", Times, serif;
+  font-size: larger;
+}
+a {
+  color: brown;
+}
